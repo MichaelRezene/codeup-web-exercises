@@ -1,0 +1,29 @@
+.fancy-header{
+    color: purple;
+    text-align: center;
+}
+h2{
+    color: green;
+    text-decoration: underline;
+}
+body{
+    background-image: url("background-image.png");
+    font-family: 'Saira Semi Condensed', sans-serif;
+
+}
+ul,ol{
+    list-style-type: circle;
+}
+td , tr{
+    padding: 12px;
+    font-size: 24px;
+}
+a:link{
+    color: green;
+}
+a:active{
+    color: red;
+}
+h2,a:hover{
+   color: black;
+}
