@@ -1,10 +1,13 @@
+h1{
+    margin-bottom: 50px;
+}
 .box{
     border: 1px solid black;
     width: 50px;
     height: 50px;
     padding: 10px;
     font-weight: bold;
-    color: white;
+    color: #e6ffd3;
     margin-top: 50px;
     margin-right: 50px;
     font-size: 15px;
@@ -16,16 +19,18 @@
 .box>img{
     position: absolute;
     top: -40px;
-    right: -40px;
+    right: -45px;
 }
 #box-red{
  background-color: red;
 }
 #box-orange{
     background-color: orange;
+
 }
 #box-yellow{
     background-color: yellow;
+
 
 }
 #box-green{
@@ -34,6 +39,7 @@
 }
 #box-blue{
     background-color: blue;
+
 }
 #box-violet{
     background-color: violet;

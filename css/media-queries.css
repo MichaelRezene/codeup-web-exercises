@@ -1,0 +1,97 @@
+/*html,*/
+/*body {*/
+/*margin:0;*/
+/*height: 100%;*/
+/*width: 100%;*/
+/*box-sizing: border-box;*/
+/*}*/
+
+.nav-links {
+    text-align: right;
+    list-style: none;
+
+}
+h1{
+    font-size: 50px;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.header-img {
+    background-image: url("http://lorempixel.com/g/900/400");
+
+
+}
+
+#social-media-links {
+
+}
+.sub-section {
+    width: 40%;
+    height: 20%;
+    right: 20px;
+    float: right;
+
+}
+
+
+.main {
+
+    width: 50%;
+    height:10%;
+    left: 0;
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+@media screen and (max-width:400px){
+
+    .nav-links li {
+
+        width: 300%;
+        border: 10px solid white;
+        text-align: center;
+        /*padding-bottom: 10px;*/
+        /*padding-left: 130px;*/
+        background-color: gray;
+        padding: 30px;
+        margin: 0;
+
+
+    }
+
+
+    .sub-section {
+        border: 1px solid blue;
+        width: 300%;
+
+
+    }
+
+    .main {
+        width: 300%;
+        border: 1px solid red;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .alert-info {
+        border: 1px solid gray;
+        text-align: center;
+        background-color: deepskyblue;
+
+    }
+
+    /*body {*/
+    /*margin: 0 auto;*/
+    /*padding: 0;*/
+}
+retest

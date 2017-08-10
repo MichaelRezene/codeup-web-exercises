@@ -1,0 +1,72 @@
+html,
+body{
+
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+body{
+    text-align: left;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.row {
+    width: 100%;
+
+
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-bottom: 15px;
+}
+
+.column-one-half{
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    border: solid black;
+    margin: 0px;
+    background-color: gray;
+
+
+
+
+}
+.column-one-third{
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+     border: solid black;
+    background-color: gray;
+
+}
+.column-one-forth{
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    border: solid black;
+    background-color: gray;
+}
+.column-one-sixth{
+    box-sizing: border-box;
+    float: left;
+     width: 16.6%;
+    border: solid black;
+    background-color: gray;
+
+}
+.column-one-eighth{
+    box-sizing: border-box;
+    float: left;
+    width: 12.5%;
+   border: solid black;
+    background-color: gray;
+
+}

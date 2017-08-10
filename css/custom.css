@@ -1,0 +1,15 @@
+header {
+    padding: 50px 0;
+    background-image: url("../img/pizza.png");
+    text-align: center;
+
+}
+.jumbotron{
+    opacity: .7;
+
+}
+
+
+.panel-footer{
+    text-align: right;
+}
