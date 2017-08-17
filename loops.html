@@ -2,11 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Loops</title>
+    <title>Title</title>
 </head>
 <body>
-<script src="js/for_loops.js">
+    <script src="js/for_loops.js">
+//    for(var i = 1; i<= 10; i++){
+//        repeated = " ";
+//        for(var j = 0; j< i; j++){
+//           repeated += i % 10;
+//        }
+//       console.log(a);
+//    }
+    for(var i = 0; i<= 10; i++){
+        console.log((i % 10).toString().repeat(i))
+    }
 
+
+
+
+    for(var i = 100; i >= 5; i = i -5){
+        console.log(i);
+    }
+//    ========================
+
+    for(var i = 1; i<= 5; i++){
+        var a = "*";
+        for(var j = 1; j < i; j++){
+            var a = a + " * " ;
+
+        }
+        console.log(a);
+    }
 </script>
 </body>
 </html>
