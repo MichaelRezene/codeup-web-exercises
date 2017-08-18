@@ -9,8 +9,20 @@
     console.log(names.length);
 
     // TODO: Create log statements that will print each of the names array elements individually.
-    console.log('The first name is: ' + names[0] + "!");
-    console.log('The first name is: ' + names[1] + "!");
-    console.log('The first name is: ' + names[2] + "!");
-    console.log('The first name is: ' + names[3] + "!");
+    // console.log('The first name is: ' + names[0] + "!");
+    // console.log('The first name is: ' + names[1] + "!");
+    // console.log('The first name is: ' + names[2] + "!");
+    // console.log('The first name is: ' + names[3] + "!");
+    for (var i = 0; i < names.length; i++) {
+        console.log( names[i]);
+    }
+
+    // loop through the array and log the values
+    names.forEach(function (element, index) {
+
+        // element is the name
+        // index is the iterator
+
+        console.log('The first name is: '  + element);
+    });
 })();
