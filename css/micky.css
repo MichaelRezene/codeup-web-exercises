@@ -1,0 +1,14 @@
+img{
+    font-size: medium;
+    float: none;
+    position:absolute;
+    left: 25%;
+    height: 300px;
+    width: 600px;
+
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: #5cb85c;
+}
