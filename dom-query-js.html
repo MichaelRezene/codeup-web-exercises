@@ -5,7 +5,10 @@
     <title>DOM: Query and Modify</title>
 </head>
 <body>
-
+<button id="btn1">Click Me1!</button>
+<button id="btn2">Click Me2!</button>
+<button id="btn3">Click Me3!</button>
+<button id="btn4">Click Me4!</button>
 <h1 id="main-header">Hello World!</h1>
 <ul>
     <li data-dbid="1">Item 1</li>
@@ -26,13 +29,23 @@
 </p>
 
 <script>
-    (function() {
+    (function(){
         "use strict";
+
         // TODO: Uncomment next line and get the main header element by id
          var mainHeader = document.getElementById("main-header");
+//         var btn1 = document.getElementById('btn1');
+//        var listener = function (event) {
+//            alert('You clicked the button!');
+//        }
+//
+//        btn1.addEventListener('click', listener, false);
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-            mainHeader.innerHTML = "JavaScript is Cool";
+            btn1.addEventListener("click", function () {
+                mainHeader.innerHTML = "JavaScript is Cool";
+            });
+
 
 
         // TODO: Uncomment the next line and get the sub header element by id
@@ -40,15 +53,21 @@
 
 
         // TODO: Set the text color of subHeader to blue
-            subHeader.style.color = "blue";
+        btn2.addEventListener("click", function () {
+            subHeader.innerHTML = "click me again";
+        });
+
 
 
         // TODO: Uncomment the next line and get all list items
-        var listItems = document.getElementsByTagName("li");
+     var listItems = document.getElementsByTagName("li");
 
 
         // TODO: Set text color on every other list item to grey
-             listItems[0].style.color = "gray";
+        btn3.addEventListener("click", function () {
+            listItems[0].style.color = "red";
+        });
+
 
         for (var i= 0; i < listItems.length; i++) {
             if ((i % 2) == 0) {
@@ -73,8 +92,12 @@
            var subParagraphs = document.getElementsByClassName("sub-paragraph");
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        btn4.addEventListener("click", function () {
             subParagraphs[0].innerHTML = "Mission Accomplished";
+        });
+
     })();
+
 </script>
 </body>
 </html>
