@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery_exercises.html</title>
+</head>
+<body>
+            <!--cdn jquery-->
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                    crossorigin="anonymous"></script>
+            <!--Local jquery
+            you can save to your file
+            -->
+    <h1 class="codeup">JQuery</h1>
+            <div class="codeup">
+            <p>
+                A common use is to put a border around every element
+                to help see the layout of a page.We could create a
+                thin red line around all of our elementsusing the all
+                selector and some CSS:
+            </p>
+            </div>
+            <div>
+            <ul id="name">
+                <li>Texas</li>
+                <li> California</li>
+                <li>Utah</li>
+                <li>Arizona</li>
+            </ul>
+            </div>
+<script>
+    "use strict"
+    $(document).ready(function () {
+
+    });
+   $('h1, p, li').css('background-color','yellow');
+  alert ( $("h1").text());
+// alert("oops");
+</script>
+</body>
+</html>
