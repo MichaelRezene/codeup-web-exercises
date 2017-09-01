@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getter and Setter</title>
+    <style>
+        .invisible {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<a id="highlight-important" href="#">Click me</a>
+<div>
+    <h1>Attribute Methods</h1>
+    <dt> Coffee</dt>
+    <dd class="invisible"> Black hot drink</dd>
+
+    <dt> Milk</dt>
+    <dd class="invisible"> White cold drink</dd>
+    <dt> Tea</dt>
+    <dd class="invisible"> Black hot tea</dd>
+    <dt> Sport</dt>
+    <dd class="invisible"> Soccer</dd>
+    <dt> State</dt>
+    <dd class="invisible"> Texas</dd>
+    <dt> Contnet</dt>
+    <dd class="invisible"> Africa</dd>
+    <dt> Name</dt>
+    <dd class="invisible"> Michael</dd>
+    </dl>
+</div>
+    <!--cdn jquery-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script>
+        "use strict";
+
+            $('#highlight-important').click(function(event) {
+                event.preventDefault();
+                $('dd').toggleClass('invisible');
+            });
+
+    </script>
+</body>
+</html>
