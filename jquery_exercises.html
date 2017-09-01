@@ -13,7 +13,7 @@
             you can save to your file
             -->
     <h1 class="codeup">JQuery</h1>
-            <div class="codeup">
+            <div class="codeup1">
             <p>
                 A common use is to put a border around every element
                 to help see the layout of a page.We could create a
@@ -30,13 +30,24 @@
             </ul>
             </div>
 <script>
-    "use strict"
-    $(document).ready(function () {
 
-    });
-   $('h1, p, li').css('background-color','yellow');
-  alert ( $("h1").text());
-// alert("oops");
+    (function () {
+        $('.codeup').click(function () {
+            $(this).css('background-color', 'red');
+    })
+        var ps = $('p');
+        ps.dblclick(function () {
+            $(this).css('font-size', '28px')
+        });
+        var listOfli = $('li');
+        listOfli.hover(function () {
+            $(this).css('clor', 'red'); },(function () {
+            $(this).css('clor', 'black')
+
+         });
+
+    })();
+
 </script>
 </body>
 </html>

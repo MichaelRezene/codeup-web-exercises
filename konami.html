@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<header>
+    Username: Micky
+    Score: 1000
+    Life #: <span id="life">1</span>
+</header>
+<body>
+<form>
+   <!--<br> <input type="text" id="textfield" name="textfield" />-->
+</form>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+</script>
+
+<script>
+   var konamiCode = [38, 38, 40, 40, 37, 39, 65, 66, 13];
+    var i = 0;
+   var lives = parseInt($("#life").text());
+
+   $('body').keydown(function (event) {
+
+       if (event.keyCode !== konamiCode[i]) {
+           $('#life').css('color', 'blue').css('font-weight','bold');
+           i = 0;
+       }else{
+           i++;
+       }
+
+        //  check if the code is complete
+       if(konamiCode.length === i){
+           $('#life').html('30 lives').css('color', 'green').css('font-weight','bold');
+           i = 0;
+       }
+       console.log(event.keyCode)
+
+   });
+
+</script>
+</body>
+</html>
+
+
+
