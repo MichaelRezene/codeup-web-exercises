@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div id="posts">
+
+</div>
+<script>
+    "use strict";
+    (function () {
+        
+        var request = $.ajax("/data/blog.json");
+        request.done(function (response) {
+
+        })
+        
+    }) ();
+</script>
+</body>
+</html>
